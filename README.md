@@ -10,3 +10,7 @@ Circuit was inspired from [Henner Zeller](https://github/hzeller/ldgraphy/tree/m
 
 The board is partially tested, but has not been tested in combination with the [Firestarter](https://github.com/hstarmans/firestarter).
 
+# Schema
+
+![](/images/photodiode_cape.svg)
+
