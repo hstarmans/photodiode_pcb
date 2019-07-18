@@ -4,7 +4,7 @@ Hexastorm - Circuit board for photodiode
 https://www.hexastorm.com
 
 PCB for reading out photodiode with schmitt trigger and opamp.
-Circuit was inspired from [Henner Zeller](https://github/hzeller/ldgraphy/tree/master/pcb/cape).
+Circuit was copied from earlier work of [Henner Zeller](https://github.com/hzeller/ldgraphy/tree/master/pcb/cape).
 
 # Status
 
