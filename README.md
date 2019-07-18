@@ -8,7 +8,7 @@ Circuit was inspired from [Henner Zeller](https://github/hzeller/ldgraphy/tree/m
 
 # Status
 
-The board is partially tested, but has not been tested in combination with the [Firestarter](https://github.com/hstarmans/firestarter).
+The board is partially tested, but has not been tested in combination with the [Firestarter](https://github.com/hzeller/ldgraphy/tree/master/pcb/cape).
 
 # Schema
 
