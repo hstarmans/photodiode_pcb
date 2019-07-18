@@ -1,4 +1,4 @@
-Hexastorm - Circuit board for photodiode
+Hexastorm - Start of scanline detector
 ========================================
 
 https://www.hexastorm.com
