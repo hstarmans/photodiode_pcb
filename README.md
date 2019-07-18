@@ -3,7 +3,7 @@ Hexastorm - Start of scanline detector
 
 https://www.hexastorm.com
 
-PCB for reading out photodiode with schmitt trigger and opamp.
+PCB for detecting the start of scanline of laserscanner by amplifying signal with opamp and then reading it out via Schmitt trigger.
 Circuit was copied from earlier work of [Henner Zeller](https://github.com/hzeller/ldgraphy/tree/master/pcb/cape).
 
 # Status
