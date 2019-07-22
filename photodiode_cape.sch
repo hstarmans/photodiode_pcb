@@ -144,17 +144,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 850  2500 750 
 $Comp
-L Device:C C2
-U 1 1 5D301423
-P 1900 2350
-F 0 "C2" H 1750 2450 50  0000 L CNN
-F 1 "0.1uF" H 1650 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1938 2200 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1901289.pdf" H 1900 2350 50  0001 C CNN
-	1    1900 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 5D30149C
 P 1600 1500
@@ -215,11 +204,6 @@ Wire Wire Line
 	850  1250 1150 1250
 Connection ~ 1150 1250
 Wire Wire Line
-	700  1550 700  1650
-Wire Wire Line
-	700  1650 850  1650
-Connection ~ 850  1650
-Wire Wire Line
 	700  1250 700  1050
 Wire Wire Line
 	700  1050 1150 1050
@@ -274,12 +258,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0103
 U 1 1 5D30885E
-P 2000 2200
-F 0 "#PWR0103" H 2000 2050 50  0001 C CNN
-F 1 "+5V" H 2015 2373 50  0000 C CNN
-F 2 "" H 2000 2200 50  0001 C CNN
-F 3 "" H 2000 2200 50  0001 C CNN
-	1    2000 2200
+P 2000 2150
+F 0 "#PWR0103" H 2000 2000 50  0001 C CNN
+F 1 "+5V" H 2015 2323 50  0000 C CNN
+F 2 "" H 2000 2150 50  0001 C CNN
+F 3 "" H 2000 2150 50  0001 C CNN
+	1    2000 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -298,35 +282,14 @@ Photo Diode Amp
 $Comp
 L Device:C C3
 U 1 1 5D3087E5
-P 2100 2350
-F 0 "C3" H 2150 2450 50  0000 L CNN
-F 1 "1uF" H 2150 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2138 2200 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2237835.pdf" H 2100 2350 50  0001 C CNN
-	1    2100 2350
+P 2000 2300
+F 0 "C3" H 2050 2400 50  0000 L CNN
+F 1 "1uF" H 2050 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2038 2150 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2237835.pdf" H 2000 2300 50  0001 C CNN
+	1    2000 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5D308A8F
-P 2000 2500
-F 0 "#PWR0104" H 2000 2250 50  0001 C CNN
-F 1 "GND" H 2005 2327 50  0000 C CNN
-F 2 "" H 2000 2500 50  0001 C CNN
-F 3 "" H 2000 2500 50  0001 C CNN
-	1    2000 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 2200 2000 2200
-Wire Wire Line
-	2000 2200 2100 2200
-Connection ~ 2000 2200
-Wire Wire Line
-	2100 2500 2000 2500
-Wire Wire Line
-	1900 2500 2000 2500
-Connection ~ 2000 2500
 $Comp
 L photodiode-cape-cache:MIC920 U1
 U 1 1 5D2FBB8F
@@ -363,18 +326,16 @@ $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 5D31C9AB
-P 1250 2450
-F 0 "#PWR0106" H 1250 2200 50  0001 C CNN
-F 1 "GND" V 1250 2250 50  0000 C CNN
-F 2 "" H 1250 2450 50  0001 C CNN
-F 3 "" H 1250 2450 50  0001 C CNN
-	1    1250 2450
+P 1300 2450
+F 0 "#PWR0106" H 1300 2200 50  0001 C CNN
+F 1 "GND" V 1300 2250 50  0000 C CNN
+F 2 "" H 1300 2450 50  0001 C CNN
+F 3 "" H 1300 2450 50  0001 C CNN
+	1    1300 2450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1250 2350 2    50   Input ~ 0
+Text GLabel 1300 2350 2    50   Input ~ 0
 HSync
-Wire Wire Line
-	1000 2350 1250 2350
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5D323131
@@ -399,12 +360,32 @@ F 3 "~" H 1100 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1000 2450 1100 2450
-Wire Wire Line
-	1100 2450 1250 2450
 Connection ~ 1100 2450
 Wire Wire Line
 	1300 2250 1250 2250
 Wire Wire Line
 	1250 2250 1000 2250
 Connection ~ 1250 2250
+Wire Wire Line
+	1000 2350 1300 2350
+Wire Wire Line
+	1100 2450 1300 2450
+$Comp
+L power:GND #PWR0104
+U 1 1 5D308A8F
+P 2000 2450
+F 0 "#PWR0104" H 2000 2200 50  0001 C CNN
+F 1 "GND" H 2005 2277 50  0000 C CNN
+F 2 "" H 2000 2450 50  0001 C CNN
+F 3 "" H 2000 2450 50  0001 C CNN
+	1    2000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  1550 700  1750
+Wire Wire Line
+	700  1750 1150 1750
+Wire Wire Line
+	1150 1750 1150 1650
+Connection ~ 1150 1650
 $EndSCHEMATC
